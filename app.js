@@ -35,13 +35,31 @@ const header = document.getElementById("main-header");
 //   items[i].style.backgroundColor = "green";
 // }
 
-const li = document.getElementsByTagName("li");
-console.log(li);
+// const li = document.getElementsByTagName("li");
+// console.log(li);
 // console.log(li[1]);
 // li[1].textContent = "Hello 2";
 // li[1].style.fontWeight = "bold";
-// li[1].style.color = "green";
-for (let i = 0; i < li.length; i++) {
-  li[i].style.fontWeight = "bold";
-  li[i].style.backgroundColor = "green";
+// // li[1].style.color = "green";
+// for (let i = 0; i < li.length; i++) {
+//   li[i].style.fontWeight = "bold";
+//   li[i].style.backgroundColor = "green";
+// }
+
+document.querySelector("list-group-item");
+// let secoundItem = document.querySelector(".list-group-item:nth-child(2)");
+
+// let secoundItem = document.querySelector(".list-group-item:nth-child(2)");
+// secoundItem.style.backgroundColor = "green";
+// let thirdItem = document.querySelector(".list-group-item:nth-child(3)");
+// // thirdItem.style.display = "none";
+
+let odd = document.querySelectorAll("li:nth-child(odd)");
+for (let i = 0; i < odd.length; i++) {
+  odd[i].style.backgroundColor = "green";
 }
+
+let secoundColor = document.querySelectorAll("li");
+// secoundColor.style.color = "green";
+secoundColor[1].style.color = "green";
+console.log(secoundColor);
